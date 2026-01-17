@@ -1,0 +1,176 @@
+/* --- GLOBAL STYLES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+/* --- HEADER STYLES --- */
+.site-header {
+  width: 100%;
+}
+
+.top-header {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  font-size: 13px;
+}
+
+.promo-section .download-link {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #ffcc00;
+  margin-left: 5px;
+}
+
+.top-nav-section {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.top-nav-section .nav-item {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000;
+}
+
+.main-logo { height: 45px; filter: invert(1); }
+
+.main-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.main-nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav-links a.active { color: #ffcc00; }
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-reservasi {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #ffcc00;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-masuk {
+  background: #ffcc00;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* --- BODY / MAIN STYLES --- */
+.site-body {
+  min-height: 100vh; /* Agar body selalu punya ruang minimal */
+}
+
+.hero-section {
+  position: relative;
+  padding: 40px 50px;
+  background-color: #0d0d0d;
+  overflow: hidden;
+}
+
+.glow-effect {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: -150px;
+  top: 0;
+  background: radial-gradient(circle, rgba(54, 84, 58, 0.3) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.hero-content { position: relative; z-index: 1; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.hero-text h1 { font-size: 48px; margin-bottom: 15px; }
+
+.search-container { display: flex; justify-content: flex-end; }
+
+.search-box {
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 350px;
+  background: rgba(255,255,255,0.05);
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
+  outline: none;
+}
+
+.filter-container { display: flex; gap: 10px; }
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid #333;
+  color: #888;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-btn.active { border-color: #ffcc00; color: #ffcc00; }
+
+.additional-content {
+  padding: 50px;
+}
+
+.content-placeholder {
+  border: 2px dashed #333;
+  padding: 100px;
+  text-align: center;
+  color: #555;
+}
+
+/* --- FOOTER STYLES --- */
+.site-footer {
+  padding: 50px;
+  background-color: #000;
+  border-top: 1px solid #222;
+  min-height: 100px; /* Ruang kosong untuk footer */
+}
