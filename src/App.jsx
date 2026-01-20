@@ -1,6 +1,6 @@
 import './App.css';
 import logo from './assets/logo.png';
-import helens from './assets/helens.mp4';
+import helens from './assets/Helens.mp4';
 import dragon from './assets/dragon.mp4';
 import tiger from './assets/tiger.mp4';
 import wclub from './assets/wclub.mp4';
@@ -119,8 +119,19 @@ function App() {
           <section className="card-section">
             <div className="card-grid">
               {cards.map((item, index) => (
-                <div className="video-card" key={index}>
-                  
+                <div className="video-card" 
+                     key={index} 
+                        onMouseEnter={(e) => {
+                          const video = e.currentTarget.querySelector("video");
+                          video.play();
+
+                            }}
+                            onMouseLeave={(e) => {
+                              const video = e.currentTarget.querySelector("video");
+                              video.pause();
+                              video.currentTime = 0;
+                            }}
+                  >
                   <video muted loop playsInline preload='none'>
                     <source src={item.video} type="video/mp4" />
                   </video>
