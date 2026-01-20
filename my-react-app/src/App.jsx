@@ -1,12 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-// import LogoHwg from '/Gambar/hwg-logo-white.webp'
+import './App.css';
+import logo from './assets/logo.png';
+import helens from './assets/helens.mp4';
+import dragon from './assets/dragon.mp4';
+import tiger from './assets/tiger.mp4';
+import wclub from './assets/wclub.mp4';
 
 function App() {
   const categories = ["ALL", "LIVEBAR", "BEACHCLUB", "NIGHTCLUB", "DINING", "OTHERS"];
   
+  const cards = [
+    {
+      title: "Helen’s",
+      desc: "THE PLACE WHERE CELEBRATION FEELS ALIVE",
+      city: "JAKARTA, TANGERANG & 4 OTHER CITIES",
+      video: helens
+    },
+    {
+      title: "DRAGON",
+      desc: "A PREMIUM BAR FOR EVERYONE TO ENJOY",
+      city: "JAKARTA, SEMARANG & 8 OTHER CITIES",
+      video: dragon
+    },
+    {
+      title: "TIGER",
+      desc: "MODERN NIGHTCLUB WITH FUSION DESIGN",
+      city: "JAKARTA, MAKASSAR & 5 OTHER CITIES",
+      video: tiger
+    },
+    {
+      title: "W SUPER CLUB",
+      desc: "EXCLUSIVE SOCIAL NIGHTCLUB EXPERIENCE",
+      city: "JAKARTA",
+      video: wclub
+    }
+  ];
+
   return (
     <div className="app-container">
       
@@ -33,7 +61,7 @@ function App() {
         {/* Main Navbar */}
         <nav className="main-navbar">
           <div className="logo-container">
-           <img src="https://holywings.com/_ipx/q_75/images/logo/hwg-logo-white.webp" alt="HW Logo" className="main-logo" />
+           <img src={logo} alt="HW Logo" className="main-logo" />
           </div>
           <ul className="main-nav-links">
             <li><a href="#">Acara</a></li>
@@ -61,7 +89,7 @@ function App() {
             
             <div className="hero-grid">
               <div className="hero-text">
-                <h1>BRAND HOLYWINGS GROUP</h1>
+                <h1>BRAND HOLYWINGS GROUP </h1>
                 <p>
                   Dengan Holywings Group, kamu bisa menjelajahi berbagai brand mulai dari 
                   klub, bar, restaurant, beachclub, boxing, pods, clothing, dan masih banyak lagi.
@@ -87,14 +115,35 @@ function App() {
           </div>
         </section>
 
-        {/* --- TEMPAT UNTUK MASUKKAN BANYAK KONTEN LAINNYA --- */}
-        <section className="additional-content">
-          {/* Anda bisa mulai memasukkan Grid Card atau konten lainnya di sini */}
-          <div className="content-placeholder">
-            <h2>Konten baru Anda akan ada di sini...</h2>
-          </div>
-        </section>
+        {/* --- CARD SECTION --- */}
+          <section className="card-section">
+            <div className="card-grid">
+              {cards.map((item, index) => (
+                <div className="video-card" key={index}>
+                  
+                  <video muted loop playsInline preload='none'>
+                    <source src={item.video} type="video/mp4" />
+                  </video>
 
+                  <div className="card-overlay"></div>
+
+                  <div className="card-content">
+                      <div className='card-bottom'>
+                        <h2>{item.title}</h2>
+                        <p className="card-desc">{item.desc}</p>
+                        <span className="card-city">{item.city}</span>
+                      </div>
+                      
+                      <div className="card-hover">
+                        <span className="card-more">Lihat Selengkapnya</span>
+                        <button className="card-btn">Pesan Sekarang</button>
+                      </div>
+                  </div>
+
+                </div>
+              ))}
+            </div>
+          </section>
       </main>
 
 
