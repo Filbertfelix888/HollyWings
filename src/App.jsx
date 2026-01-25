@@ -1,9 +1,6 @@
 import './App.css';
 import logo from './assets/logo.png';
-import helens from './assets/Helens.mp4';
-import dragon from './assets/dragon.mp4';
-import tiger from './assets/tiger.mp4';
-import wclub from './assets/wclub.mp4';
+
 
 function App() {
   const categories = ["ALL", "LIVEBAR", "BEACHCLUB", "NIGHTCLUB", "DINING", "OTHERS"];
@@ -13,26 +10,74 @@ function App() {
       title: "Helen’s",
       desc: "THE PLACE WHERE CELEBRATION FEELS ALIVE",
       city: "JAKARTA, TANGERANG & 4 OTHER CITIES",
-      video: helens
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-helens.webm"
     },
     {
       title: "DRAGON",
-      desc: "A PREMIUM BAR FOR EVERYONE TO ENJOY",
+      desc: "A PREMIUM BAR FOR EVERYONE TO ENJOY WITH LUXURIOUS AND CLASSY VIBE",
       city: "JAKARTA, SEMARANG & 8 OTHER CITIES",
-      video: dragon
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-gold-dragon.webm"
     },
     {
       title: "TIGER",
-      desc: "MODERN NIGHTCLUB WITH FUSION DESIGN",
+      desc: "MODERN NIGHTCLUB WITH FUSION OF DESIGN AND ENTERTAINMENT",
       city: "JAKARTA, MAKASSAR & 5 OTHER CITIES",
-      video: tiger
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-golden-tiger.webm"
     },
     {
       title: "W SUPER CLUB",
-      desc: "EXCLUSIVE SOCIAL NIGHTCLUB EXPERIENCE",
+      desc: "EXCLUSIVE SOCIAL NIGHTCLUB COMBINING DESIGN, TECHNOLOGY, AND HIGT-CLASS SERVICES",
       city: "JAKARTA",
-      video: wclub
-    }
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-w-superclub.webm"
+    },
+    {
+      title: "ATLAS",
+      desc: "THE BIGGEST BEACH CLUB IN THE WORLD",
+      city: "BALI",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-atlas.webm"
+    },
+    {
+      title: "ROCCA",
+      desc: "BRIGIN ITALY'S WARMTH AND ASIA'S CHARM TO THE HEART OF BSD",
+      city: "TANGERANG",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-rocca.webm"
+    },
+    {
+      title: "PHEONIX",
+      desc: "THE EXQUISITE BASH OF NORTH; DISCOVER MODERN GASTRONOMY AT ITS FINEST.",
+      city: "JAKARTA",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-phoenix.webm"
+    },
+    {
+      title: "THE H CLUB",
+      desc: "THE BIGGEST NIGHTCLUB IN ASIA FRAMING THE WORLD - CLASS STAGE IN JAKARTA, INDONESIA",
+      city: "JAKARTA",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-h-club.webm"
+    },
+    {
+      title: "CABIN",
+      desc: "VIBE IN THE CITY CENTER OFFFRES LIVE ENTERTAIMENT, A COZY LOUNGE, AND A GREAT ATMOSPHERE.",
+      city: "BOGOR",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-cabin.webm"
+    },
+    {
+      title: "H LIVE HOUSE",
+      desc: "A PREMIER DESTINATION FOR THOSE SEEKING AN IMERSIVE LIVE MUSIC EXPERIENCE",
+      city: "JAKARTA, BATAM, SEMARANG, PEKANBARU",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-livehouse.webm"
+    },
+    {
+      title: "HELEN'S NIGHT MART",
+      desc: "THE FIRST DIY COCKTAIL SHOP IN INDONESIA WITH A TRENDY MINI-MART CONCEPT",
+      city: "JAKARTA, MAKASSAR, JOGJAKARTA, SEMARANG",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-helens-night.webm"
+    },
+    {
+      title: "MI MI LIVE HOUSE",
+      desc: "INDONESIA'S FIRSRT MANDARIN BAR BLENDING VIBRANT NIGHTLIFE WITH LIVE ENTERTAINMENT.",
+      city: "JAKARTA",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-mimi.webm"
+    },
   ];
 
   return (
@@ -133,7 +178,7 @@ function App() {
                             }}
                   >
                   <video muted loop playsInline preload='none'>
-                    <source src={item.video} type="video/mp4" />
+                    <source src={item.video} type="video/webm" />
                   </video>
 
                   <div className="card-overlay"></div>

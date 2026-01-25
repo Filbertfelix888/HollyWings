@@ -164,16 +164,18 @@ body {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
 /* ===== CARD ===== */
 .video-card {
   position: relative;
-  height: 520px;
+  height: 600px;
   border-radius: 22px;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* VIDEO */
@@ -246,6 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  
   /* transform: scale(0.95);
   transition: all 0.35s ease; */
 }
@@ -259,13 +262,33 @@ body {
   border-radius: 999px;
   font-weight: 600;
   cursor: pointer;
-}
+} 
 
 /* ===== HOVER EFFECT ===== */
-.video-card:hover .card-hover {
+.video-card:hover .card-hover{
   opacity: 1;
-  /* transform: scale(1); */
 }
+
+.card-hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+
+.video-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  gap: 32px;
+  justify-content: center;
+  overflow: visible;
+}
+
 
 .video-card:hover .card-bottom {
   opacity: 0.25;
