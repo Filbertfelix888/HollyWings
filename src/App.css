@@ -242,6 +242,7 @@ body {
 
 .card-desc {
   opacity: 1;
+  font-size: 75%;
 }
 
 .card-city {

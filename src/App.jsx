@@ -93,9 +93,23 @@ function App() {
     {
       title: "AMBYAR SUPER CLUB",
       logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/staging/outlet_type_logo/2024/12/20/41ac6294-f8ce-4a62-b9d8-b505ef513544.webp",
-      desc: "INDONESIA'S FIRSRT MANDARIN BAR BLENDING VIBRANT NIGHTLIFE WITH LIVE ENTERTAINMENT.",
-      city: "JAKARTA",
-      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-mimi.webm"
+      desc: "A NEW NEXT-LEVEL CONCEPT IN DANGDUT, PRESENTING MORE GIMMICKS EVERY NIGHT.",
+      city: "JAKARTA, SURABAYA",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-ambyar.webm"
+    },
+    {
+      title: "SUPER HOUSE",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/staging/outlet_type_logo/2024/12/18/d9012fe2-8a26-47b5-aaf3-ccfef464448a.webp",
+      desc: "SPECTACULAR POP MUSIC CONCERT EVERY NIGHT WITH MODERN-CLASSIC ELEGANCE LIVEHOUSE",
+      city: "JAKARTA, SURABAYA",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-superhouse.webm"
+    },
+    {
+      title: "LIL TIGER",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/staging/outlet_type_logo/2024/12/20/ee09ffe8-11ce-4490-8351-cdc8bacd1c30.webp",
+      desc: "GEN Z TAKES OVER THE CLUB, OLNY UNDER 30 YO ARE ALLOWED",
+      city: "",
+      video: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2024/9/13/17aa1fae-5891-48e6-b21f-3ee23c825700.webp"
     },
   ];
 
