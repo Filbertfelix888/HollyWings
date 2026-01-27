@@ -172,7 +172,7 @@ body {
 .video-card {
   position: relative;
   height: 600px;
-  border-radius: 22px;
+  border-radius: 24px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -200,7 +200,9 @@ body {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.55);
-  transition: background 0.4s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
 /* CONTENT */
@@ -211,22 +213,35 @@ body {
   z-index: 2;
 }
 
-.card-bottom {
+/* LOGO TENGAH */
+.card-logo-center {
   position: absolute;
-  bottom: 26px;
-  left: 24px;
-  right: 24px;
-  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  z-index: 5;              
+  pointer-events: none;    
 }
 
-.card-bottom h2 {
-  font-size: 28px;
-  margin-bottom: 8px;
+.card-bottom{
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  z-index: 6;
+  text-align: center;
+  color: #fff;
+}
+
+.card-logo {
+  max-width: 160px;
+  margin-bottom: 12px;
+  object-fit: contain;
 }
 
 .card-desc {
-  font-size: 13px;
-  opacity: 0.85;
+  opacity: 1;
 }
 
 .card-city {
@@ -242,12 +257,12 @@ body {
 /* ===== HOVER ACTION (TENGAH) ===== */
 .card-hover {
   position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
   opacity: 0;
+  transition: opacity 0.3s ease;
   
   /* transform: scale(0.95);
   transition: all 0.35s ease; */
@@ -269,10 +284,17 @@ body {
   opacity: 1;
 }
 
+
+
 .card-hover {
+ position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 4;
   opacity: 0;
   transition: opacity 0.3s ease;
-  
 }
 
 .video-card:hover {
@@ -289,11 +311,13 @@ body {
   overflow: visible;
 }
 
-
-.video-card:hover .card-bottom {
-  opacity: 0.25;
+.video-card:hover .card-overlay {
+  opacity: 1;
 }
 
+.video-card:hover .card-logo-center {
+  opacity: 0.85;
+}
 
 
 /* ===== RESPONSIVE ===== */
