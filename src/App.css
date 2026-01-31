@@ -168,9 +168,18 @@ body {
   gap: 24px;
 }
 
+.card-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ===== CARD ===== */
 .video-card {
   position: relative;
+  width: 360px;
   height: 600px;
   border-radius: 24px;
   overflow: hidden;
@@ -252,8 +261,19 @@ body {
 
 .card-more {
   color:#ffc400;
-  margin: 10px;
+  margin: 0px;
+  gap: 10px;
   font-size: 20px;
+  display: center;
+}
+
+.card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 /* ===== HOVER ACTION (TENGAH) ===== */
 .card-hover {
@@ -277,6 +297,7 @@ body {
   padding: 10px 22px;
   border-radius: 999px;
   font-weight: 600;
+  margin-top: 15px;
   cursor: pointer;
 } 
 
@@ -285,18 +306,6 @@ body {
   opacity: 1;
 }
 
-
-
-.card-hover {
- position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 4;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
 
 .video-card:hover {
   transform: scale(1.04);

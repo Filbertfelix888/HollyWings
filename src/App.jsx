@@ -109,7 +109,110 @@ function App() {
       logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/staging/outlet_type_logo/2024/12/20/ee09ffe8-11ce-4490-8351-cdc8bacd1c30.webp",
       desc: "GEN Z TAKES OVER THE CLUB, OLNY UNDER 30 YO ARE ALLOWED",
       city: "",
-      video: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2024/9/13/17aa1fae-5891-48e6-b21f-3ee23c825700.webp"
+      bgImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjleX0GDoYv0lye6qYGnnKXZ8q94ihFWoi9w&s",
+      video: ""
+    },
+    {
+      title: "XIAO MEI MEI ",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/2/14/21f22243-b7c8-42a8-8794-eb404e062a24.webp",
+      desc: "Blends Chinese tradition with vibran entertaiment, offering nostalgic flavors, a lively astmosphere, and awarm space for cherished gatherings.",
+      city: "SURABAYA",
+      bgImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR0FgfI5_JqA2I7JUVO1IGpeBrz6M9uOI9ww&s",
+      video: ""
+    },
+    {
+      title: "H BAR ",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/4/23/7dee6179-7957-44f3-aecf-84c1dd3980c6.webp",
+      desc: "Asia's Best Social Bar",
+      city: "JAKARTA, KUALA LUMPUR",
+      bgImage: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/article_banner/2025/4/30/3kepOzKM8CHb2vP9bnhvFK89J7g0DJogrlTljdKQ.jpg",
+      video: ""
+    },
+    {
+      title: "TEMABAK LANGIT ",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/5/5/4ea1967c-6f75-438a-9bbe-8d48e176e40f.webp",
+      desc: "The new era of breakbeat ready to ligt up your night",
+      city: "BANDUNG",
+      bgImage: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2025/7/14/5742a68b-9235-462a-9afa-4d7bd5e83f00.webp",
+      video: ""
+    },
+    {
+      title: "HELEN'S TORI MART ",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/6/26/95eb6d40-5b07-4cbb-8d14-a5372bed79cd.webp",
+      desc: "Helens Night Mart with a bar concept like in Japan, with yakitori food.",
+      city: "JAKARTA",
+      bgImage: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_thumbnail/2025/6/26/9c1c1b30-c790-4cb1-ae2e-495c9d3da3a6.webp",
+      video: ""
+    },
+    {
+      title: "YES CHEF! ",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/10/13/3e8b7127-b363-4291-8a9d-0b440ee63d98.webp",
+      desc: "The First Fun Dining Experience in Indonesia",
+      city: "",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-yeschef.webm"
+    },
+    {
+      title: "TIGER HYPER MART ",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/7/28/f9cb072f-6e14-481e-adf3-83fe03ce4e25.webp",
+      desc: "A minimart-style bar to chill, drink, and hang out with no minimum charger, just good vibes.",
+      city: "MAKASSAR",
+      bgImage: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_background/2025/7/28/e150616d-0613-4999-a459-56f3b95c3aec.webp",
+      video: ""
+    },
+    {
+      title: "CECILIA BAR WIJAYA",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/10/17/gkqNZRiPCqQrRo7msMhOX8jeJLlgJyf6rDwMe3Nq.webp",
+      desc: "A Thematic dining & bar experience",
+      city: "",
+      bgImage: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2025/10/13/46542e27-8011-4246-8efa-1accf24d2381.webp",
+      video: ""
+    },
+    {
+      title: "SOSCIAL CLUB",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/8/25/d78831f5-4439-462c-956f-decc3032b316.webp",
+      desc: "Not your usual nightclub. Not your average bar.  It’s a Sing-Along Party  &amp; Rnb Vibes —  More intimate than a club. More vibrant than a bar.",
+      city: "JAKARTA",
+      bgImage: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_background/2025/8/25/ec152f40-dffd-47bf-9fe9-1a9cbfc44ae2.webp",
+      video: ""
+    },
+    {
+      title: "MI MI SOCIAL HOUSE",
+      logo: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_logo/2025/5/14/d7fcd01e-19be-4704-b7bc-7ac66ff2e3dd.webp",
+      desc: "Mimi Social House is a refined Chinese dining spot with daily Mandarin entertainment, located at Central Park Mall. A relaxed spin-off of Mimi Livehouse PIK, it blends authentic cuisine and chill music in an elegant, social setting",
+      city: "JAKARTA",
+      bgImage: "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_type_background/2025/5/14/8fbefd1d-0eb0-4f9a-8742-1f40db7f394f.webp",
+      video: ""
+    },
+    {
+      title: "HSS",
+      logo: "https://holywings.com/_ipx/q_75/images/logo/hss-logo.webp",
+      desc: "",
+      city: "",
+      video: "https://hwg-public.s3.ap-southeast-3.amazonaws.com/_videos/web/brand-hss.webm"
+    },
+    {
+      title: "POWDS",
+      logo: "https://holywings.com/_ipx/q_75/images/logo/hwpowds-logo.webp",
+      desc: "",
+      city: "",
+      bgImage: "https://pix.toco.id/resize/w:700,h:700,fit:cover,f:webp,q:85/toco/img/image-1759140377243.webp?s=14c6723b3b92ac185fa0b5206d3bf407923e18de28488fc75bc616850b39f3ae",
+      video: ""
+    },
+    {
+      title: "HOLYWINGS STORE",
+      logo: "https://holywings.com/_ipx/q_75/images/logo/hwstore-logo.webp",
+      desc: "",
+      city: "",
+      bgImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjleX0GDoYv0lye6qYGnnKXZ8q94ihFWoi9w&s",
+      video: ""
+    },
+    {
+      title: "SAYAP SUCI",
+      logo: "https://holywings.com/_ipx/q_75/images/logo/hwcoffee-logo.webp",
+      desc: "",
+      city: "",
+      bgImage: "https://sayapsuci.com/images/thumbnail/first-store.webp",
+      video: ""
     },
   ];
 
@@ -197,22 +300,40 @@ function App() {
           <section className="card-section">
             <div className="card-grid">
               {cards.map((item, index) => (
-                <div className="video-card" 
-                     key={index} 
-                        onMouseEnter={(e) => {
-                          const video = e.currentTarget.querySelector("video");
-                          video.play();
-
-                            }}
-                            onMouseLeave={(e) => {
-                              const video = e.currentTarget.querySelector("video");
-                              video.pause();
-                              video.currentTime = 0;
-                            }}
+                <div
+                    className="video-card"
+                    key={index}
+                    onMouseEnter={(e) => {
+                      const video = e.currentTarget.querySelector("video");
+                      if (video) video.play();
+                    }}
+                    onMouseLeave={(e) => {
+                      const video = e.currentTarget.querySelector("video");
+                      if (video) {
+                        video.pause();
+                        video.currentTime = 0;
+                      }
+                    }}
                   >
-                  <video muted loop playsInline preload='none'>
-                    <source src={item.video} type="video/webm" />
-                  </video>
+
+                  {/* MEDIA (VIDEO / IMAGE) */}
+                    {item.video ? (
+                      <video
+                        muted
+                        loop
+                        playsInline
+                        preload="none"
+                        className="card-media"
+                      >
+                        <source src={item.video} type="video/webm" />
+                      </video>
+                    ) : (
+                      <img
+                        src={item.bgImage}
+                        alt="Background"
+                        className="card-bg"
+                      />
+                    )}
 
                   {/* overlay */}
                     <div className="card-overlay"></div>
@@ -227,7 +348,10 @@ function App() {
                   {/* hover content */}
                     <div className="card-hover">
                       <span className="card-more">Lihat Selengkapnya</span>
-                      <button className="card-btn">Pesan Sekarang</button>
+
+                      {!["HSS", "POWDS", "HOLYWINGS STORE", "SAYAP SUCI"].includes(item.title) && (
+                        <button className="card-btn">Pesan Sekarang</button>
+                      )}
                     </div>
 
                   {/* text bawah */}
