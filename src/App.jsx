@@ -403,10 +403,10 @@ function App() {
             <ul>
               <li>Tentang Kami</li>
               <li>Berita</li>
-              <li>Karier</li>
+              <li><a href="https://cloningwebsiteholywingscareer.vercel.app/">Karier</a></li>
             </ul>
           </div>
-
+              
           <div className="footer-col">
             <h4>&nbsp;</h4>
             <ul>
