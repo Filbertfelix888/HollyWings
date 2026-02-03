@@ -235,7 +235,7 @@ function App() {
               <span className="dropdown-arrow">▾</span>
             </div>
             <a href="#" className="nav-item">Partnership</a>
-            <a href="#" className="nav-item">Karier</a>
+            <a href="https://cloningwebsiteholywingscareer.vercel.app/" className="nav-item">Karier</a>
             <a href="#" className="nav-item">Outlets</a>
           </nav>
         </div>
