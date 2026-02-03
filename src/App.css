@@ -166,7 +166,7 @@ body {
 .filter-btn.active { border-color: #ffcc00; color: #ffcc00; }
 
 .card-section {
-  padding: 80px 60px;
+  padding: 80px clamp(24px, 5vw, 80px);
   background: #000;
 }
 
@@ -182,7 +182,8 @@ body {
 .video-card {
   position: relative;
   width: 100%;
-  height: 700px;           
+  max-width: 320px;
+  height: 520px;           
   border-radius: 24px;
   overflow: hidden;
   cursor: pointer;
@@ -255,7 +256,7 @@ body {
 .card-more {
   color:#ffc400;
   margin: 0px;
-  gap: 10px;
+  gap: 0px;
   font-size: 20px;
   display: center;
   white-space: nowrap;
@@ -309,8 +310,10 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  max-width: 1400px;
+  margin: 0 auto;   
 }
 
 .video-card:hover .card-overlay {
