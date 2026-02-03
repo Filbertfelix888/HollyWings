@@ -367,9 +367,74 @@ function App() {
       </main>
 
 
-      {/* --- BAGIAN FOOTER (KOSONG) --- */}
-      <footer className="site-footer">
-        {/* Footer sengaja dikosongkan untuk Anda isi nanti */}
+     <footer className="hw-footer">
+        <div className="footer-top">
+          {/* LEFT */}
+          <div className="footer-col">
+            <img
+              src={logo}
+              alt="HW Logo"
+              className="footer-logo"
+            />
+
+            <p className="footer-address">
+              HW Central Office<br />
+              The Breeze BSD Unit L02, BSD Green Office Park Jl. BSD Grand Boulevard,<br />
+              BSD City, Kab. Tangerang, Banten 15345
+            </p>
+
+            <div className="footer-contact">
+              <span>📸</span>
+              <span>💬</span>
+              <span>✉️</span>
+              <a href="mailto:info@hwgroup.id">info@hwgroup.id</a>
+            </div>
+          </div>
+
+          {/* MIDDLE */}
+          <div className="footer-col">
+            <h4>INFORMASI LAINNYA</h4>
+            <ul>
+              <li>Tentang Kami</li>
+              <li>Berita</li>
+              <li>Karier</li>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <h4>&nbsp;</h4>
+            <ul>
+              <li>Reservasi</li>
+              <li>Brands</li>
+              <li>Hubungi Kami</li>
+            </ul>
+          </div>
+
+          {/* RIGHT */}
+          <div className="footer-col">
+            <h4>UNDUH APLIKASI HOLLYWINGS</h4>
+            <div className="store-buttons">
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="App Store"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play"
+              />
+            </div>
+            <span className="footer-version">3.2.0</span>
+          </div>
+        </div>
+
+        {/* BOTTOM BAR */}
+        <div className="footer-bottom">
+          <span>© HW Group Indonesia All rights reserved.</span>
+          <div className="footer-links">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
       </footer>
 
     </div>
