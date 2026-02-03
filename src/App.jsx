@@ -1,10 +1,11 @@
 import './App.css';
 import logo from './assets/logo.png';
-
+import { useState } from "react";
 
 function App() {
   const categories = ["ALL", "LIVEBAR", "BEACHCLUB", "NIGHTCLUB", "DINING", "OTHERS"];
-  
+  const [open, setOpen] = useState(false);
+
   const cards = [
     {
       title: "Helen’s",
@@ -244,7 +245,13 @@ function App() {
           <div className="logo-container">
            <img src={logo} alt="HW Logo" className="main-logo" />
           </div>
-          <ul className="main-nav-links">
+
+          {/* HAMBURGER (MOBILE) */}
+          <div className="hamburger" onClick={() => setOpen(!open)}>
+            ☰
+          </div>
+
+          <ul className={`main-nav-links ${open ? 'active' : ''}`}>
             <li><a href="#">Acara</a></li>
             <li><a href="#" className="active">Brands</a></li>
             <li><a href="#">Berita</a></li>
@@ -365,7 +372,6 @@ function App() {
             </div>
           </section>
       </main>
-
 
      <footer className="hw-footer">
         <div className="footer-top">
