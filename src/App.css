@@ -13,8 +13,7 @@ body {
 
 /* --- HEADER STYLES --- */
 .site-header {
-  width: 100%;
-  position: sticky;
+ position: sticky;
   top: 0;
   z-index: 9999;
 }
@@ -159,17 +158,9 @@ body {
 
 .filter-btn.active { border-color: #ffcc00; color: #ffcc00; }
 
-/* ===== CARD ===== */
 .card-section {
   padding: 80px 60px;
   background: #000;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
 }
 
 .card-media {
@@ -180,7 +171,27 @@ body {
   object-fit: cover;
 }
 
+/* ===== CARD ===== */
+.video-card {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 480px;           
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* VIDEO */
+/* .video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.6s ease;
+} */
+
 .video-card video {
   position: absolute;
   inset: 0;
@@ -189,21 +200,6 @@ body {
   object-fit: cover;
 }
 
-.video-card {
-  position: relative;
-  width: 360px;
-  height: 600px;
-  border-radius: 24px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.video-card:hover {
-  transform: scale(1.04);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-  z-index: 10;
-}
 /* OVERLAY */
 .card-overlay {
   position: absolute;
@@ -285,6 +281,8 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   
+  /* transform: scale(0.95);
+  transition: all 0.35s ease; */
 }
 
 /* BUTTON */
@@ -304,12 +302,17 @@ body {
   opacity: 1;
 }
 
+
+.video-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 360px);
-  gap: 32px;
-  justify-content: center;
-  overflow: visible;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .video-card:hover .card-overlay {
@@ -433,8 +436,20 @@ body {
   .video-card {
     height: 420px;
   }
+}
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-   .footer-top {
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .footer-top {
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 60px 30px;
